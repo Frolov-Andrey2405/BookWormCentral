@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        .main {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Book Worm Central</title>
 </head>
+
 <body>
     <h1>Welcome to Book Worm Central</h1>
     <form action="/save" method="post">
-        {% csrf_token %}
-        <label>Name</label>
-        <input type="text" name="name">
-        <button type="submit">Save</button>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label class="main">Name</label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+
+                <tr>
+                    <td><label style="color: blue; font-size: 20px;">Age</label></td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                            <button type="submit" style="
+                            display: block;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                            background-color:green;
+                            width:100%;
+                            color:white;">Save</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
     <a href="/shopping">Shopping</a>
 </body>
+
 </html>
