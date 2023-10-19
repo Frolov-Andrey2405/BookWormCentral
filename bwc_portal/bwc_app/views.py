@@ -4,7 +4,11 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'index.html', context={})
+    return render(request, 'home.html', context={"current_tab": "home"})
+
+
+def readers(request):
+    return render(request, 'readers.html', context={"current_tab": "readers"})
 
 
 def shopping(request):
