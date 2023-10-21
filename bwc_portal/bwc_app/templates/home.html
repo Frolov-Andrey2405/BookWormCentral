@@ -3,5 +3,42 @@
 {% load static %}
 
 {% block main_content %}
-<h1>I'm in home page</h1>
+<main role="main">
+    <div class="jumbotron">
+        <div class="container">
+            <img src="{% static '/logo.png' %}" class="rounded float-start" alt="LIMS" height="200" style="margin-right: 20px;">
+            <h1 class="display-4">Hello, reader!</h1>
+            <p>Welcome to Book Worm Central! We have a wide variety of interesting books on any topic</p>
+            <p><a role="button" href="#" class="btn btn-primary btn-lg">Browse our collection >> </a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Why reading is important?</h2>
+                <p>Reading is essential because it broadens our perspectives, fosters empathy, and enhances our understanding of diverse
+                cultures and ideas. It stimulates the mind, improves vocabulary, and sharpens critical thinking skills, laying the
+                foundation for lifelong learning and personal growth.</p>
+            </div>
+            <div class="col">
+                <h2>Key benefits</h2>
+                <p>Reading nurtures creativity and imagination, transporting readers to fantastical realms while also providing insights
+                into the complexities of the human experience. It reduces stress by offering an escape from everyday pressures and
+                encourages relaxation, promoting mental well-being.</p>
+            </div>
+            <div class="col">
+                <h2>Thought for the day</h2>
+                <p>"In the pages of a book, we find windows to worlds we have never known, and mirrors reflecting pieces of ourselves we
+                might have overlooked. Let us embrace the power of reading not merely as a habit, but as a journey of endless discovery,
+                enriching our souls and connecting us to the vast tapestry of humanity."</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+</main>
+
+<footer class="container">
+    <p>© Book Worm Central 2023</p>
+</footer>
 {% endblock %}
